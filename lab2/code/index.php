@@ -64,3 +64,8 @@ echo $answer;
 
 echo "<br>";
 
+// Task 14
+
+$a=10;
+$b=3;
+echo $a % $b;
