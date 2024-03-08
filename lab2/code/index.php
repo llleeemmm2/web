@@ -82,3 +82,5 @@ else
     echo "\n";
     echo $a % $b;
 }
+
+$st = pow(2, 10);
