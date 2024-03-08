@@ -69,3 +69,16 @@ echo "<br>";
 $a=10;
 $b=3;
 echo $a % $b;
+echo "\n";
+if ($a % $b == 0)
+{
+    echo "It is divided";
+    echo "\n";
+    echo $a / $b;
+}
+else
+{
+    echo "It is divided with the remainder";
+    echo "\n";
+    echo $a % $b;
+}
