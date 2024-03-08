@@ -82,5 +82,10 @@ else
     echo "\n";
     echo $a % $b;
 }
-
+echo "\n";
 $st = pow(2, 10);
+echo $st;
+echo "\n";
+$s = sqrt(245);
+echo $s;
+echo "\n";
