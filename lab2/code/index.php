@@ -98,4 +98,6 @@ foreach ($arr as $arr)
 }
 echo sqrt($sum);
 
-echo "<br>";
+$sqrtof379 = sqrt(379);
+echo"\n{$sqrtof379}\n";
+echo round($sqrtof379), " ", round($sqrtof379, 1), " ", round($sqrtof379, 2), "\n";
