@@ -53,3 +53,7 @@ echo 8 ** 2 ;
 
 $my_num = 5;
 $answer = $my_num;
+$answer +=2;
+$answer *=2;
+$answer -=2;
+$answer /=2;
