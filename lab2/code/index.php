@@ -89,3 +89,13 @@ echo "\n";
 $s = sqrt(245);
 echo $s;
 echo "\n";
+
+$arr = [4, 2, 5, 19, 13, 0, 10];
+$sum = 0;
+foreach ($arr as $arr)
+{
+    $sum += $arr ** 2;
+}
+echo sqrt($sum);
+
+echo "<br>";
