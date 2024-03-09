@@ -117,3 +117,17 @@ echo "\n";
 echo min(4, -2, 5, 19, -130, 0, 10);
 echo "\n";
 echo max(4, -2, 5, 19, -130, 0, 10);
+echo "\n";
+
+$random = rand(1, 100);
+echo $random;
+echo "\n";
+
+$randomArr = [];
+for ($i = 0; $i <= 9; $i++)
+{
+    $randomArr[$i] = rand(1, 100);
+}
+foreach ($randomArr as $number) {
+    echo $number . "\n";
+}
