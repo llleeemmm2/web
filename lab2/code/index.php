@@ -197,4 +197,11 @@ function increaseEnthusiasm($str)
 echo increaseEnthusiasm("I like web-programming");
 echo "\n";
 
-
+function repeatThreeTimes($str)
+{
+    return $str . $str . $str;
+}
+echo repeatThreeTimes("I like web-programming");
+echo "\n";
+echo increaseEnthusiasm(repeatThreeTimes("I like web-programming"));
+echo "\n";
