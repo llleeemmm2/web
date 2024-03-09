@@ -211,3 +211,16 @@ function cut($str, $num = 10)
     return substr($str, 0, $num);
 }
 echo cut("3222222222222", 3);
+echo "\n";
+
+$arr16 = [22, 12, 2004, 2024, 322];
+function printArr16($arr16, $index = 0)
+{
+    if ($index < count($arr16))
+    {
+        echo $arr16[$index] . " ";
+        printArr16($arr16, $index + 1);
+    }
+}
+printArr16($arr16);
+
