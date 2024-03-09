@@ -408,3 +408,7 @@ $sum = array_sum($arr20);
 $mean = $sum / count($arr20);
 echo $mean;
 echo "\n";
+
+$sum20 = 100 * 101 / 2;
+echo $sum20;
+echo "\n";
