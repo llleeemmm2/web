@@ -275,3 +275,15 @@ foreach ($arr171 as $row)
 }
 echo $sum;
 echo "\n";
+
+$array = [];
+
+for ($i = 0; $i < 3; $i++) {
+    $subArray = [];
+    for ($j = 0; $j < 3; $j++) {
+        $subArray[] = ($i * 3) + $j + 1;
+    }
+    $array[] = $subArray;
+}
+
+print_r($array);
