@@ -398,3 +398,6 @@ for ($i = 1; $i <= $rows; $i++) {
     echo str_repeat('x', $i) . "\n";
     echo "<br>";
 }
+echo "<br>";
+
+
