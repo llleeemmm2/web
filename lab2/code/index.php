@@ -381,7 +381,7 @@ $arr18 = [22, 12, 2004];
 
 if (count($arr18) == 3) {
     $sum = 0;
-    foreach ($arr as $value) {
+    foreach ($arr18 as $value) {
         $sum += $value;
     }
     echo "Сумма элементов массива: $sum";
@@ -392,3 +392,9 @@ echo "<br>";
 
 // Task 19
 
+$rows = 20;
+
+for ($i = 1; $i <= $rows; $i++) {
+    echo str_repeat('x', $i) . "\n";
+    echo "<br>";
+}
