@@ -140,3 +140,13 @@ $a = 222;
 $b = 111;
 echo abs($b - $a);
 echo "\n";
+
+$noabsArr = [1, 2, -1, -2, 3, -3];
+$absArr = [];
+foreach($noabsArr as $value){
+    $absArr[] = abs($value);
+}
+foreach ($absArr as $number) {
+    echo $number . "\n";
+}
+
