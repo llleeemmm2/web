@@ -112,3 +112,8 @@ echo "\n";
 echo $arrof587["floor"];
 echo "\n";
 echo $arrof587["ceil"];
+echo "\n";
+
+echo min(4, -2, 5, 19, -130, 0, 10);
+echo "\n";
+echo max(4, -2, 5, 19, -130, 0, 10);
