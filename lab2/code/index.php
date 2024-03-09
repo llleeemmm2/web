@@ -401,3 +401,10 @@ for ($i = 1; $i <= $rows; $i++) {
 echo "<br>";
 
 
+// Task 20(урааааа последнее задание)
+
+$arr20 = [22, 12, 2004, 2024, 20];
+$sum = array_sum($arr20);
+$mean = $sum / count($arr20);
+echo $mean;
+echo "\n";
