@@ -301,3 +301,13 @@ $user = [
 ];
 
 echo $user['surname'] . ' ' . $user['name'] . ' ' . $user['patronymic'];
+echo "\n";
+
+$date = [
+    'year' => date('Y'),
+    'month' => date('m'),
+    'day' => date('d')
+];
+
+echo $date['year'] . '-' . $date['month'] . '-' . $date['day'];
+echo "\n";
