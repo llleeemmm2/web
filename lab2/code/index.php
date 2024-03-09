@@ -9,31 +9,28 @@ $order = "\nI like web-programming";
 
 echo "\nYour order is: $very_bad_unclear_name.";
 
-echo "<br>";
+echo "<br />";
 
 // Task 2
 $num1 = 20;
-echo $num1;
-echo "\n";
+echo "$num1\n";
 
 $num2 = 22;
-echo $num2;
-echo "\n";
+echo "$num2\n";
 
 $num3 = 22.12;
-echo $num3;
-echo "\n";
+echo "$num3\n";
+
 
 $num4 = 4;
 $num5 = 8;
-echo $num4 + $num5;
+echo $num4 + $num5, "\n";
 
 $last_month = 1187.23;
 $this_month = 1089.98;
-echo "\n";
-echo $last_month - $this_month;
+echo "$last_month - $this_month, \n";
 
-echo "<br>";
+echo "<br />";
 
 // Task 11
 
@@ -43,13 +40,13 @@ $days = $months * 16;
 $days_per_language = $days / $num_languages;
 echo $days_per_language;
 
-echo "<br>";
+echo "<br />";
 
 // Task 12
 
 echo 8 ** 2 ;
 
-echo "<br>";
+echo "<br />";
 
 // Task 13
 
@@ -62,33 +59,25 @@ $answer /=2;
 $answer -= $my_num;
 echo $answer;
 
-echo "<br>";
+echo "<br />";
 
 // Task 14
 
-$a=10;
-$b=3;
-echo $a % $b;
-echo "\n";
-if ($a % $b == 0)
+$a = 10;
+$b = 3;
+echo $a % $b, "\n";
+if ($a % $b === 0)
 {
-    echo "It is divided";
-    echo "\n";
-    echo $a / $b;
+    echo "It is divided\n", $a / $b;
 }
 else
 {
-    echo "It is divided with the remainder";
-    echo "\n";
-    echo $a % $b;
+    echo "It is divided with the remainder\n", $a % $b, "\n";
 }
-echo "\n";
 $st = pow(2, 10);
-echo $st;
-echo "\n";
+echo "$st\n";
 $s = sqrt(245);
-echo $s;
-echo "\n";
+echo "$s\n";
 
 $arr = [4, 2, 5, 19, 13, 0, 10];
 $sum = 0;
@@ -99,7 +88,7 @@ foreach ($arr as $arr)
 echo sqrt($sum);
 
 $sqrtof379 = sqrt(379);
-echo"\n{$sqrtof379}\n";
+echo "\n{$sqrtof379}\n";
 echo round($sqrtof379), " ", round($sqrtof379, 1), " ", round($sqrtof379, 2), "\n";
 
 $sqrtof587 = sqrt(587);
@@ -107,24 +96,17 @@ $arrof587 = [
     "floor" => floor($sqrtof587),
     "ceil" => ceil($sqrtof587)
 ];
-echo $sqrtof587;
-echo "\n";
-echo $arrof587["floor"];
-echo "\n";
-echo $arrof587["ceil"];
-echo "\n";
+echo "$sqrtof587\n";
+echo $arrof587["floor"], "\n";
+echo $arrof587["ceil"], "\n";
 
-echo min(4, -2, 5, 19, -130, 0, 10);
-echo "\n";
-echo max(4, -2, 5, 19, -130, 0, 10);
-echo "\n";
+echo min(4, -2, 5, 19, -130, 0, 10), "\n", max(4, -2, 5, 19, -130, 0, 10), "\n";
 
 $random = rand(1, 100);
-echo $random;
-echo "\n";
+echo "$random\n";
 
 $randomArr = [];
-for ($i = 0; $i <= 9; $i++)
+for ($i = 0; $i < 10; $i++)
 {
     $randomArr[$i] = rand(1, 100);
 }
@@ -134,12 +116,10 @@ foreach ($randomArr as $number) {
 
 $a = 333;
 $b = 444;
-echo abs($a - $b);
-echo "\n";
+echo abs($a - $b), "\n";
 $a = 222;
 $b = 111;
-echo abs($b - $a);
-echo "\n";
+echo abs($b - $a), "\n";
 
 $noabsArr = [1, 2, -1, -2, 3, -3];
 $absArr = [];
@@ -166,14 +146,14 @@ foreach ($dividers as $number) {
 $arr110 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 $sum110 = 0;
 $count = 0;
-while ($sum110 <= 10)
+while (10 >= $sum110)
 {
     $sum110 += $arr110[$count];
     $count += 1;
 }
 echo $count;
 
-echo "<br>";
+echo "<br />";
 
 // Task 15
 
@@ -186,7 +166,7 @@ function printStringReturnNumber($string)
 $my_num = printStringReturnNumber("I like web-programming");
 echo "\n$my_num";
 
-echo "<br>";
+echo "<br />";
 
 // Task 16
 
@@ -194,24 +174,20 @@ function increaseEnthusiasm($str)
 {
     return $str . "!";
 }
-echo increaseEnthusiasm("I like web-programming");
-echo "\n";
+echo increaseEnthusiasm("I like web-programming"), "\n";
 
 function repeatThreeTimes($str)
 {
     return $str . $str . $str;
 }
-echo repeatThreeTimes("I like web-programming");
-echo "\n";
-echo increaseEnthusiasm(repeatThreeTimes("I like web-programming"));
-echo "\n";
+echo repeatThreeTimes("I like web-programming"), "\n";
+echo increaseEnthusiasm(repeatThreeTimes("I like web-programming")), "\n";
 
 function cut($str, $num = 10)
 {
     return substr($str, 0, $num);
 }
-echo cut("3222222222222", 3);
-echo "\n";
+echo cut("3222222222222", 3), "\n";
 
 $arr16 = [22, 12, 2004, 2024, 322];
 function printArr16($arr16, $index = 0)
@@ -229,12 +205,12 @@ $num16 = 22122004;
 function SumOfDigits($num)
 {
     $sum = 0;
-    while ($num > 0)
+    while (0 < $num)
     {
         $sum += $num % 10;
         $num = (int)($num / 10);
     }
-    if ($sum>9)
+    if (9 < $sum)
     {
         return SumOfDigits($sum);
     }
@@ -242,7 +218,7 @@ function SumOfDigits($num)
 }
 echo SumOfDigits($num16);
 
-echo "<br>";
+echo "<br />";
 
 // Task 17
 
@@ -259,12 +235,7 @@ $arr17 = arrayFill('x', 7);
 print_r($arr17);
 echo "\n";
 
-$arr171 = array
-(
-    array(1,2,3),
-    array(4,5),
-    array(6,7)
-);
+$arr171 = [[1,2,3], [4,5], [6,7]];
 $sum = 0;
 foreach ($arr171 as $row)
 {
@@ -273,11 +244,9 @@ foreach ($arr171 as $row)
         $sum += $value;
     }
 }
-echo $sum;
-echo "\n";
+echo "$sum\n";
 
 $array = [];
-
 for ($i = 0; $i < 3; $i++) {
     $subArray = [];
     for ($j = 0; $j < 3; $j++) {
@@ -285,7 +254,6 @@ for ($i = 0; $i < 3; $i++) {
     }
     $array[] = $subArray;
 }
-
 print_r($array);
 echo "\n";
 
@@ -294,34 +262,19 @@ $result = ($arr172[0] * $arr172[1]) + ($arr172[2] * $arr172[3]);
 echo $result;
 echo "\n";
 
-$user = [
-    'name' => 'Илья',
-    'surname' => 'Мирошник',
-    'patronymic' => 'Сергеевич'
-];
+$user = ['name' => 'Илья', 'surname' => 'Мирошник', 'patronymic' => 'Сергеевич'];
+echo $user['surname'] . ' ' . $user['name'] . ' ' . $user['patronymic'], "\n";
 
-echo $user['surname'] . ' ' . $user['name'] . ' ' . $user['patronymic'];
-echo "\n";
-
-$date = [
-    'year' => date('Y'),
-    'month' => date('m'),
-    'day' => date('d')
-];
-
-echo $date['year'] . '-' . $date['month'] . '-' . $date['day'];
-echo "\n";
+$date = ['year' => date('Y'), 'month' => date('m'), 'day' => date('d')];
+echo $date['year'] . '-' . $date['month'] . '-' . $date['day'], "\n";
 
 $arr173 = ['a', 'b', 'c', 'd', 'e'];
 $arrCount = count($arr173);
-echo $arrCount;
-echo "\n";
-echo end($arr173);
-echo "\n";
-echo prev($arr173);
-echo "\n";
+echo "$arrCount\n";
+echo end($arr173), "\n";
+echo prev($arr173), "\n";
 
-echo "<br>";
+echo "<br />";
 
 // Task 18
 
@@ -329,7 +282,7 @@ $num181 = 2004;
 $num182 = 2024;
 function checkSum($num181, $num182)
 {
-    if ($num181 + $num182 > 10)
+    if (10 < $num181 + $num182)
     {
         return true;
     }
@@ -340,7 +293,7 @@ function checkSum($num181, $num182)
 }
 function checkEqual($num181, $num182)
 {
-    if ($num181 + $num182 > 10)
+    if (10 < $num181 + $num182)
     {
         return true;
     }
@@ -349,27 +302,24 @@ function checkEqual($num181, $num182)
         return false;
     }
 }
-echo checkSum($num181, $num182);
-echo "\n";
-echo checkEqual($num181, $num182);
-echo "\n";
+echo checkSum($num181, $num182), "\n";
+echo checkEqual($num181, $num182), "\n";
 
 $test = 0;
-if ($test == 0) echo "Верно";
-echo "\n";
+if ($test === 0) echo "Верно", "\n";
 
 $age = 19;
 $sum = 0;
 
-if ($age < 10 || $age > 99) {
+if (10 > $age || 99< $age) {
     echo "Число меньше 10 или число больше 99";
 } else {
-    while ($age > 0) {
+    while (0 < $age) {
         $sum += $age % 10;
         $age = floor($age / 10);
     }
 
-    if ($sum <= 9) {
+    if (9 >= $sum) {
         echo "Сумма цифр однозначна";
     } else {
         echo "Сумма цифр двузначна";
@@ -379,7 +329,7 @@ echo "\n";
 
 $arr18 = [22, 12, 2004];
 
-if (count($arr18) == 3) {
+if (3 == count($arr18)) {
     $sum = 0;
     foreach ($arr18 as $value) {
         $sum += $value;
@@ -388,7 +338,7 @@ if (count($arr18) == 3) {
 } else {
     echo "Массив не содержит 3 элементов";
 }
-echo "<br>";
+echo "<br />";
 
 // Task 19
 
@@ -396,9 +346,9 @@ $rows = 20;
 
 for ($i = 1; $i <= $rows; $i++) {
     echo str_repeat('x', $i) . "\n";
-    echo "<br>";
+    echo "<br />";
 }
-echo "<br>";
+echo "<br />";
 
 
 // Task 20(урааааа последнее задание)
@@ -406,12 +356,10 @@ echo "<br>";
 $arr20 = [22, 12, 2004, 2024, 20];
 $sum = array_sum($arr20);
 $mean = $sum / count($arr20);
-echo $mean;
-echo "\n";
+echo "$mean\n";
 
 $sum20 = 100 * 101 / 2;
-echo $sum20;
-echo "\n";
+echo "$sum20\n";
 
 $arr201 = [16, 49, 81, 121];
 $arr2012 = array_map('sqrt', $arr201);
