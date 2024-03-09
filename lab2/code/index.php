@@ -101,3 +101,14 @@ echo sqrt($sum);
 $sqrtof379 = sqrt(379);
 echo"\n{$sqrtof379}\n";
 echo round($sqrtof379), " ", round($sqrtof379, 1), " ", round($sqrtof379, 2), "\n";
+
+$sqrtof587 = sqrt(587);
+$arrof587 = [
+    "floor" => floor($sqrtof587),
+    "ceil" => ceil($sqrtof587)
+];
+echo $sqrtof587;
+echo "\n";
+echo $arrof587["floor"];
+echo "\n";
+echo $arrof587["ceil"];
