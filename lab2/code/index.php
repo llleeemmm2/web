@@ -223,4 +223,22 @@ function printArr16($arr16, $index = 0)
     }
 }
 printArr16($arr16);
+echo "\n";
+
+$num16 = 22122004;
+function SumOfDigits($num)
+{
+    $sum = 0;
+    while ($num > 0)
+    {
+        $sum += $num % 10;
+        $num = (int)($num / 10);
+    }
+    if ($sum>9)
+    {
+        return SumOfDigits($sum);
+    }
+    return $sum;
+}
+echo SumOfDigits($num16);
 
