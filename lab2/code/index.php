@@ -175,3 +175,13 @@ echo $count;
 
 echo "<br>";
 
+// Task 15
+
+function printStringReturnNumber($string)
+{
+    echo $string;
+    return 322;
+}
+
+$my_num = printStringReturnNumber("I like web-programming");
+echo "\n$my_num";
