@@ -357,3 +357,21 @@ echo "\n";
 $test = 0;
 if ($test == 0) echo "Верно";
 echo "\n";
+
+$age = 19;
+$sum = 0;
+
+if ($age < 10 || $age > 99) {
+    echo "Число меньше 10 или число больше 99";
+} else {
+    while ($age > 0) {
+        $sum += $age % 10;
+        $age = floor($age / 10);
+    }
+
+    if ($sum <= 9) {
+        echo "Сумма цифр однозначна";
+    } else {
+        echo "Сумма цифр двузначна";
+    }
+}
