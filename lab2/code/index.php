@@ -162,3 +162,14 @@ for ($i = 1; $i <= $num40; $i++)
 foreach ($dividers as $number) {
     echo $number . "\n";
 }
+
+$arr110 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+$sum110 = 0;
+$count = 0;
+while ($sum110 <= 10)
+{
+    $sum110 += $arr110[$count];
+    $count += 1;
+}
+echo $count;
+
