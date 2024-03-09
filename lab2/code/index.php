@@ -258,3 +258,20 @@ function arrayFill($value, $count)
 $arr17 = arrayFill('x', 7);
 print_r($arr17);
 echo "\n";
+
+$arr171 = array
+(
+    array(1,2,3),
+    array(4,5),
+    array(6,7)
+);
+$sum = 0;
+foreach ($arr171 as $row)
+{
+    foreach ($row as $value)
+    {
+        $sum += $value;
+    }
+}
+echo $sum;
+echo "\n";
