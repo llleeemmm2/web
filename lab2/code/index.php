@@ -244,3 +244,17 @@ echo SumOfDigits($num16);
 
 echo "<br>";
 
+// Task 17
+
+function arrayFill($value, $count)
+{
+    $result = [];
+    for ($i = 0; $i < $count; $i++)
+    {
+        $result[] = str_repeat($value, $i + 1);
+    }
+    return $result;
+}
+$arr17 = arrayFill('x', 7);
+print_r($arr17);
+echo "\n";
