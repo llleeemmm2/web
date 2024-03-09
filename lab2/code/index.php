@@ -150,3 +150,15 @@ foreach ($absArr as $number) {
     echo $number . "\n";
 }
 
+$num40 = 40;
+$dividers = [];
+for ($i = 1; $i <= $num40; $i++)
+{
+    if ($num40 % $i ==0)
+    {
+        $dividers[] = $i;
+    }
+}
+foreach ($dividers as $number) {
+    echo $number . "\n";
+}
