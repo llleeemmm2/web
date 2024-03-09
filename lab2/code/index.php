@@ -412,3 +412,8 @@ echo "\n";
 $sum20 = 100 * 101 / 2;
 echo $sum20;
 echo "\n";
+
+$arr201 = [16, 49, 81, 121];
+$arr2012 = array_map('sqrt', $arr201);
+print_r($arr2012);
+echo "\n";
