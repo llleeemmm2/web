@@ -205,3 +205,9 @@ echo repeatThreeTimes("I like web-programming");
 echo "\n";
 echo increaseEnthusiasm(repeatThreeTimes("I like web-programming"));
 echo "\n";
+
+function cut($str, $num = 10)
+{
+    return substr($str, 0, $num);
+}
+echo cut("3222222222222", 3);
