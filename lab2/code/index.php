@@ -131,3 +131,12 @@ for ($i = 0; $i <= 9; $i++)
 foreach ($randomArr as $number) {
     echo $number . "\n";
 }
+
+$a = 333;
+$b = 444;
+echo abs($a - $b);
+echo "\n";
+$a = 222;
+$b = 111;
+echo abs($b - $a);
+echo "\n";
