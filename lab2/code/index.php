@@ -352,3 +352,8 @@ function checkEqual($num181, $num182)
 echo checkSum($num181, $num182);
 echo "\n";
 echo checkEqual($num181, $num182);
+echo "\n";
+
+$test = 0;
+if ($test == 0) echo "Верно";
+echo "\n";
