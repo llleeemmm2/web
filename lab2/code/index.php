@@ -420,3 +420,8 @@ echo "\n";
 
 $alphabetArr = array_combine(range('a', 'z'), range(1, 26));
 print_r($alphabetArr);
+echo "\n";
+
+$str20 = '1234567890';
+$sum201 = array_sum(str_split($str20, 2));
+echo $sum201;
