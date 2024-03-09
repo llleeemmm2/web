@@ -185,3 +185,16 @@ function printStringReturnNumber($string)
 
 $my_num = printStringReturnNumber("I like web-programming");
 echo "\n$my_num";
+
+echo "<br>";
+
+// Task 16
+
+function increaseEnthusiasm($str)
+{
+    return $str . "!";
+}
+echo increaseEnthusiasm("I like web-programming");
+echo "\n";
+
+
