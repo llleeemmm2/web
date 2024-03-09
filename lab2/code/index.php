@@ -311,3 +311,12 @@ $date = [
 
 echo $date['year'] . '-' . $date['month'] . '-' . $date['day'];
 echo "\n";
+
+$arr173 = ['a', 'b', 'c', 'd', 'e'];
+$arrCount = count($arr173);
+echo $arrCount;
+echo "\n";
+echo end($arr173);
+echo "\n";
+echo prev($arr173);
+echo "\n";
