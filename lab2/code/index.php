@@ -293,3 +293,11 @@ $arr172 = [2, 5, 3, 9];
 $result = ($arr172[0] * $arr172[1]) + ($arr172[2] * $arr172[3]);
 echo $result;
 echo "\n";
+
+$user = [
+    'name' => 'Илья',
+    'surname' => 'Мирошник',
+    'patronymic' => 'Сергеевич'
+];
+
+echo $user['surname'] . ' ' . $user['name'] . ' ' . $user['patronymic'];
