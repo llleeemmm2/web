@@ -323,3 +323,32 @@ echo "\n";
 
 echo "<br>";
 
+// Task 18
+
+$num181 = 2004;
+$num182 = 2024;
+function checkSum($num181, $num182)
+{
+    if ($num181 + $num182 > 10)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+function checkEqual($num181, $num182)
+{
+    if ($num181 + $num182 > 10)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+echo checkSum($num181, $num182);
+echo "\n";
+echo checkEqual($num181, $num182);
