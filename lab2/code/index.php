@@ -52,10 +52,10 @@ echo "<br />";
 
 $my_num = 5;
 $answer = $my_num;
-$answer +=2;
-$answer *=2;
-$answer -=2;
-$answer /=2;
+$answer += 2;
+$answer *= 2;
+$answer -= 2;
+$answer /= 2;
 $answer -= $my_num;
 echo $answer;
 
@@ -66,7 +66,7 @@ echo "<br />";
 $a = 10;
 $b = 3;
 echo $a % $b, "\n";
-if ($a % $b === 0)
+if (0 === $a % $b)
 {
     echo "It is divided\n", $a / $b;
 }
@@ -134,7 +134,7 @@ $num40 = 40;
 $dividers = [];
 for ($i = 1; $i <= $num40; $i++)
 {
-    if ($num40 % $i ==0)
+    if (0 === $num40 % $i)
     {
         $dividers[] = $i;
     }
@@ -306,12 +306,12 @@ echo checkSum($num181, $num182), "\n";
 echo checkEqual($num181, $num182), "\n";
 
 $test = 0;
-if ($test === 0) echo "Верно", "\n";
+if (0 === $test) echo "Верно", "\n";
 
 $age = 19;
 $sum = 0;
 
-if (10 > $age || 99< $age) {
+if (10 > $age || 99 < $age) {
     echo "Число меньше 10 или число больше 99";
 } else {
     while (0 < $age) {
@@ -329,7 +329,7 @@ echo "\n";
 
 $arr18 = [22, 12, 2004];
 
-if (3 == count($arr18)) {
+if (3 === count($arr18)) {
     $sum = 0;
     foreach ($arr18 as $value) {
         $sum += $value;
