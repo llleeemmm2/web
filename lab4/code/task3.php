@@ -45,6 +45,20 @@
             $title = basename($parts[2], '.txt');
             $description1 = file_get_contents($entry);
             $data = explode("\n", $description1);
+            require_once __DIR__ . '/vendor/autoload.php';
+
+
+            $client = new Google_Client();
+            $client->setAuthConfig('credentials.json');
+            $client->addScope(Google_Service_Sheets::SPREADSHEETS_READONLY);
+            $service = new Google_Service_Sheets($client);
+
+            $spreadsheetId = '19OXd7bcOi3HTQmZJT4K88n7vRzE_WC4aNe_brChwn2M';
+            $range = "lab4!A1:D1000";
+
+
+            $response = $service->spreadsheets_values->get($spreadsheetId, $range);
+            $values = $response->getValues();
             echo "<tr>";
             echo "<td>{$data[0]}</td>";
             echo "<td>{$category}</td>";
