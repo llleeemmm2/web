@@ -62,6 +62,14 @@ $mysqli->close();
         <th>Title</th>
         <th>Description</th>
         </thead>
+        <?php foreach ($arr as $item): ?>
+            <tr>
+                <td><?= $item['email'] ?></td>
+                <td><?= $item['category'] ?></td>
+                <td><?= $item['title'] ?></td>
+                <td><?= $item['description'] ?></td>
+            </tr>
+        <?php endforeach; ?>
         <tbody>
         </tbody>
     </table>
